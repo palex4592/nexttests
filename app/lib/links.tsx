@@ -111,11 +111,11 @@ export const SideNavLinks: TheList[] = [
     link: "/docs/button",
     prio: 50,
   },
-  {
-    name: "Search",
-    link: "/docs/search",
-    prio: 70,
-  },
+  // {
+  //   name: "Search",
+  //   link: "/docs/search",
+  //   prio: 70,
+  // },
 ];
 
 export const alllinks = [

@@ -1,17 +1,19 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import hljs from "highlight.js";
-import "highlight.js/styles/github.css"; // You can choose a different style
+import "highlight.js/styles/github.css";
+// You can choose a different style
+import "../globals.css";
 
 const CodeSnippet = ({ code }: { code: string }) => {
-  const textareaRef = useRef(null);
-  const preRef = useRef(null);
+  // const textareaRef = useRef(null);
+  // const preRef = useRef(null);
   const [isCopied, setIsCopied] = useState(false);
-  useEffect(() => {
-    if (preRef.current) {
-      hljs.highlightBlock(preRef.current);
-    }
-  }, [code]);
+  // useEffect(() => {
+  //   if (preRef.current) {
+  //     hljs.highlightBlock(preRef.current);
+  //   }
+  // }, [code]);
 
   const handleCopy = async () => {
     try {
@@ -25,13 +27,14 @@ const CodeSnippet = ({ code }: { code: string }) => {
 
   return (
     <div className="code-snippet-container">
-      <pre ref={preRef}>
-        <code className="language-javascript">{code}</code>
-      </pre>
+      {/* <pre ref={preRef}> */}
+      <code className="language-javascript">{code}</code>
+      {/* </pre> */}
       <textarea
-        ref={textareaRef}
+        // ref={textareaRef}
         value={code}
         readOnly
+        className="textarea-black"
         style={{
           position: "absolute",
           left: "-9999px",
@@ -60,7 +63,6 @@ const CodeSnippet = ({ code }: { code: string }) => {
           padding: 0px;
           border: 3px solid #e1e4e8;
           border-radius: 6px;
-          background-color: #f6f8fa;
         }
 
         pre {

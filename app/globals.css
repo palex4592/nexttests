@@ -6,6 +6,10 @@
   @apply rounded-md border p-2 hover:bg-gray-100 flex items-center justify-center;
 }
 
+.textarea-black {
+  color: black !important; /* Ensure the text color is black regardless of theme */
+}
+
 .search-component {
   position: relative;
   width: 100%;
