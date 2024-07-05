@@ -50,7 +50,7 @@ type SearchResult = string;
 export const SearchComponent = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
-  const searchRef = useRef<HTMLInputElement>(null);
+  // const searchRef = useRef<HTMLInputElement>(null);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
@@ -65,15 +65,15 @@ export const SearchComponent = () => {
     setQuery("");
     setResults([]);
   };
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      searchRef.current &&
-      !searchRef.current.contains(event.target as Node)
-    ) {
-      setQuery("");
-      setResults([]);
-    }
-  };
+  // const handleClickOutside = (event: MouseEvent) => {
+  //   if (
+  //     searchRef.current &&
+  //     !searchRef.current.contains(event.target as Node)
+  //   ) {
+  //     setQuery("");
+  //     setResults([]);
+  //   }
+  // };
 
   const handleEscapeKey = (event: KeyboardEvent) => {
     if (event.key === "Escape") {
@@ -83,10 +83,10 @@ export const SearchComponent = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    // document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleEscapeKey);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      // document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("keydown", handleEscapeKey);
     };
   }, []);
