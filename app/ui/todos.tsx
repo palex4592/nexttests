@@ -2,7 +2,6 @@ import { getAnything } from "@/app/lib/data";
 import { DeleteTodo, DeleteTodoSupa } from "./button";
 import { UpdateTodo, UpdateTodoSupa } from "./buttonnav";
 import { StyledTodos } from "../styles/globalStyles";
-import { unstable_noStore as noStore } from "next/cache";
 
 export async function Todos() {
   let todos;
@@ -34,7 +33,6 @@ export async function Todos() {
   );
 }
 export async function Todossupa() {
-  noStore();
   const todos = await getAnything("supa", "todossupa", [
     "id",
     "title",

@@ -1,6 +1,6 @@
 import { apidirectussnippet, apidirectussnippettwo } from "@/app/lib/snippets";
 import CodeSnippet from "@/app/ui/codesnippets";
-import { ButtonNavPrevious, ButtonNavNext } from "@/app/ui/buttonnav";
+import { ButtonNavNext } from "@/app/ui/buttonnav";
 export default function Home() {
   return (
     <main className="flex-col items-center p-24 justify-center">
@@ -20,7 +20,6 @@ export default function Home() {
         Quick explanation of the code and where to put it etc...
       </p>
       <div className="flex justify-center">
-        {/* <ButtonNavPrevious path={"/docs/directus"} text={"Setup"} /> */}
         <ButtonNavNext path={"/docs/directus/setup"} text={"Setup"} />
       </div>
     </main>

@@ -1,6 +1,3 @@
-import { apidirectussnippet, apidirectussnippettwo } from "@/app/lib/snippets";
-import CodeSnippet from "@/app/ui/codesnippets";
-import { ButtonNavNext } from "@/app/ui/buttonnav";
 import Link from "next/link";
 export default function Home() {
   return (

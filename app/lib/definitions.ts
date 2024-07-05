@@ -34,13 +34,6 @@ export type TableType = {
 
 export type TableTypeArray = TableType[];
 
-// export interface TableType {
-//   id: string | number;
-//   name: string;
-//   title: string;
-//   description: string;
-// }
-
 export type First = {
   id: string | number;
   name: string;

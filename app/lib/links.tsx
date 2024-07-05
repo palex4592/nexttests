@@ -212,20 +212,3 @@ export const FilteredAllLinks = (linkque: string) => {
   }
   return filteredLinks;
 };
-
-// export const FilteredAllLinks = (linkque: string) => {
-//   const filteredLinks: string[] = [];
-//   if (linkque) {
-//     alllinks?.forEach((itemone) => {
-//       itemone.tags.forEach((itemtwo) => {
-//         if (
-//           itemtwo.toLowerCase().includes(linkque.toLowerCase()) &&
-//           !filteredLinks.includes(itemone.link)
-//         ) {
-//           filteredLinks.push(itemone.link);
-//         }
-//       });
-//     });
-//   }
-//   return filteredLinks;
-// };

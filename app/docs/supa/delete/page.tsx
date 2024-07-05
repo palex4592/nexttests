@@ -1,6 +1,6 @@
 import { apisupasnippet, fetchsupasnippet } from "@/app/lib/snippets";
 import CodeSnippet from "@/app/ui/codesnippets";
-import { ButtonNavPrevious, ButtonNavNext } from "@/app/ui/buttonnav";
+import { ButtonNavPrevious } from "@/app/ui/buttonnav";
 export default function Home() {
   return (
     <main className="flex-col items-center p-24">

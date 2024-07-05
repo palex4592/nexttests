@@ -1,10 +1,5 @@
 import { getAnything } from "../lib/data";
 import MakeList from "./list";
-import {
-  ApiDirectusFields,
-  ApiDirectusTable,
-  fetchDirectusFields,
-} from "../lib/data";
 
 export async function FirstTable() {
   let firstTable;

@@ -3,9 +3,6 @@ import { TableType } from "../lib/definitions";
 export default function MakeList({ thedata }: { thedata: TableType[] }) {
   return (
     <div>
-      {/* <h1 className="flex justify-center underline">
-        This is working: {thedata[1].name}
-      </h1> */}
       <ul>
         {thedata?.map((item) => (
           <li key={item.id} className="p-6">

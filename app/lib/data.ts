@@ -1,10 +1,8 @@
 import directus from "./directus";
-import { readItems, readItem, createItem } from "@directus/sdk";
+import { readItems, readItem } from "@directus/sdk";
 import { firstSupaSchema, getFirstTableSchema, TableType } from "./definitions";
 import { createClient } from "./supabase";
-import { unstable_noStore as noStore, revalidatePath } from "next/cache";
-// !Array.isArray(response)
-
+import { unstable_noStore as noStore } from "next/cache";
 // DIRECTUS
 
 export async function ApiDirectusTable() {
